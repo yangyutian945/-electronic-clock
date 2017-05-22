@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>倒计时定时器</title>
+    <style>
+        body,html{
+            font-size:30px;
+            color:green;
+        }
+    </style>
+</head>
+<body>
+<span class="hour">00</span>:<span class="minute">00</span>:<span class="second">00</span>
+</body>
+<script>
+    function toDouble(n){
+        if(n<10){
+            return "0"+n;
+        }else{
+            return n;
+        }
+    }
+    function tick(){
+        var oDate=new Date();
+        var hour=oDate.getHours(),
+            minute=oDate.getMinutes(),
+            second=oDate.getSeconds();
+        document.getElementsByClassName("hour")[0].innerHTML=toDouble(hour);
+        document.getElementsByClassName("minute")[0].innerHTML=toDouble(minute);
+        document.getElementsByClassName("second")[0].innerHTML=toDouble(second);
+    }
+    setInterval(tick,1000);
+    tick();
+</script>
+</html>
