@@ -1,4 +1,4 @@
-# 20170522电子时钟
+# electronic-clock电子时钟
  
 ## 制作过程
 
@@ -8,6 +8,7 @@
 
 ## 如何预览
 
-点击 https://yangyutian945.github.io/20170522/ 即可预览
+点击  https://yangyutian945.github.io/electronic-clock/ 即可预览
 
 
+ 
